@@ -10,24 +10,22 @@ What value do you think it offers?
 How can you use the staging area to make sure you have one commit per logical
 change?
 
-    The pros of manually choosing when to create a commit or checkpoint like in Git over having versions saved automatically is that if a developer is careful enough he/she can have logical versions to fall back on or compare should something go wrong or have a complicated product outcome.  Also, the commits when Git is used correctly, version history is not cluttered with unnescessary checkpoints because some other arbirtatry metric was used for auto-saving: like time intervals or sustained idleness.  
-    The cons of manually choosing commits is that developer discresion is not always the most sound and may forget to commit.
+    You can use the staging area to make sure you have one commit per logical change by reading what is prepared to be committed e.g. what is green, so if too many greens are present the question should arise in one's head that perhaps a commit is too big since it changes many files.  
 
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
 
-    I think Git allows saving multiple files in one commit because as a version control system meant for code it understands the inter-dependent nature of larger coding applications typically needing more than one file to run and hence was made allowable to track many files at once so that the developer can catch all the nuances of changes among many files and debug.  Google Docs, however, makes sense to not need this ability as its meant for files like a research papers or slide shows, where just one worked on file is usually ever used.  
-
+    Situations in which branches would be helpful in keeping your history organized would be in adding a new feature to product, adding a new foreign language to a product's UI, or working collaboratively on a company project like PageNodes.  Branches would help you to be daring in making changes and help you orient yourself to exactly what product version you're working on.  "[Anytime you're building something different, a context change]" - Mike Wales @ Udacity. Production quality branch is the main one.  
 How do the diagrams help you visualize the branch structure?
 
-    You can type 'git log' to see the full list of commits that have happened on a repo, and you can use 'git diff [latest id] [older change] to see deletions and insertions.'
+    Diagrams help you visualize the branch structure by delivering orientation.
 
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
 
-    Using a VCS can make me more confident to make changes that could break something because as long as I make a commit before trying something crazy with my code, I can always go back to an older version and see what wrong or just use an older version instead if my code feels changed beyond repair.  VCS works like a safety cable would for astronauts needing to fix something on their space ship, as long as their cable works they can generally always come back to safety.  
+    The result of merging two branches together is to create one new combined branch and the teachers represent the merge in the diagram like so to show a joining of two branches and continuing from there.    
 
-What are the pros and cons of Gitâ€™s automatic merging vs. always doing merges
+What are the pros and cons of Git's automatic merging vs. always doing merges
 manually?
 
-    I want to try using git to be an alpha ass programmer.  Okay I'm kidding, but I do want to not be laughed out of the park when I wreck IcedDev's code base for pagenodes accidently. 
+    The pros of using automatic merging is quickness and ballsiness,while merging manually is more likely to lead to a working product.  The cons of automatic merging is replacing parts of a code stack with bad functionality over good functionality from another contributer, and the con of using manual merging over automatic merging is perhaps choosing the wrong code replacement for something. 
